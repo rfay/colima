@@ -3,13 +3,13 @@ name: Integration
 on:
   push:
     tags: ["v*"]
-    branches: [main]
+    branches: [main,testmain]
     paths-ignore:
       - "**/*.md"
       - "**/*.nix"
       - "**/*.lock"
   pull_request:
-    branches: [main]
+    branches: [main,testmain]
     paths-ignore:
       - "**/*.md"
       - "**/*.nix"
